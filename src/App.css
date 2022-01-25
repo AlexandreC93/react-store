@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.item {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+  border-bottom: 1px solid lightgrey;
+  margin: 5px;
+}
+
+.item-name {
+  border: solid 1px lightgrey;
+  border-radius: 15px;
+  padding: 5px;
+  background-color: blue;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.icon {
+  height: 80px;
+  margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title-cont {
+  display: flex;
+  flex-flow: row;
+}
+.item-cont {
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+}
+
+#header {
+  color: white;
+  justify-content: space-between;
+  display: flex;
+  background-color: blue;
+}
+
+.decrement {
+  border-radius: 15px;
+  border: lightgrey solid 1px;
+  padding: 5px;
+  cursor: pointer;
+}
+.increment {
+  border-radius: 15px;
+  border: lightgrey solid 1px;
+  padding: 5px;
+  cursor: pointer;
+}
+.delete {
+  border-radius: 15px;
+  border: lightgrey solid 1px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.create {
+  border-radius: 8px;
+  border: 1px lightgrey solid;
+  cursor: pointer;
+  padding: 5px;
+  background-color: blue;
+  color: white;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  border: solid 1px lightgrey;
+  border-radius: 5px;
+  margin: 5px;
 }
